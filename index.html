@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelEase - Book Your Journey</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #008080;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .login-btn {
+            background: #008080;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .hero {
+            height: 90vh;
+            background: url('https://source.unsplash.com/1600x900/?travel') 
+                        no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+        }
+
+        .hero-content p {
+            margin: 15px 0;
+        }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box input,
+        .search-box button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-box button {
+            background: #008080;
+            color: white;
+            cursor: pointer;
+        }
+
+        .destinations {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .destination-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 300px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card h3 {
+            padding: 15px;
+        }
+
+        .services {
+            background: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #008080;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">TravelEase</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Destinations</a>
+            <a href="#">Packages</a>
+            <a href="#">Contact</a>
+            <a href="#" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore The World With Us</h1>
+            <p>Book flights, hotels, and holiday packages easily</p>
+
+            <div class="search-box">
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
+                <input type="date">
+                <input type="date">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-container">
+
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?paris" alt="">
+                <h3>Paris</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?maldives" alt="">
+                <h3>Maldives</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?newyork" alt="">
+                <h3>New York</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+
+            <div class="service-box">
+                <h3>Flight Booking</h3>
+                <p>Book domestic and international flights at best prices.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Hotel Booking</h3>
+                <p>Find luxury and budget hotels with easy cancellation.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Holiday Packages</h3>
+                <p>Customized travel packages for families and couples.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 TravelEase. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
